@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-17",
+  "timezone": "Europe/Istanbul",
+  "coverage": {
+    "south": 41,
+    "north": 41.045,
+    "west": 28.958,
+    "east": 29.003
+  },
+  "supportedDestinationIDs": [
+    "galata",
+    "taksim",
+    "eminonu",
+    "bazaar",
+    "sultanahmet",
+    "hagia",
+    "blue"
+  ],
+  "geometryStatus": "Archived IBB GTFS coordinates/alignment; stop order cross-checked against operator pages on 2026-10-17. Entrance locations and track geometry are not freshly surveyed.",
+  "timetableStatus": "Archived GTFS calendar ends 2024-12-31; trip times and frequencies MUST NOT be used as current schedules.",
+  "attribution": "İstanbul Büyükşehir Belediyesi Açık Veri Portalı. Atıf 4.0 Uluslararası (CC BY 4.0) kapsamında lisanslanan kamu sektörü bilgilerini içerir. Adapted to a pilot subset; stop labels normalised and current published operating windows added.",
+  "licenseURL": "https://data.ibb.gov.tr/license",
+  "sources": [
+    "https://data.ibb.gov.tr/dataset/public-transport-gtfs-data",
+    "https://data.ibb.gov.tr/api/3/action/package_show?id=public-transport-gtfs-data",
+    "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T1",
+    "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=F1"
+  ],
+  "lines": [
+    {
+      "id": "T1",
+      "name": "Kabataş–Bağcılar tram",
+      "towardForward": "Bağcılar",
+      "towardReverse": "Kabataş",
+      "openMinute": 360,
+      "closeMinute": 1440,
+      "officialURL": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T1",
+      "knownFullRideSeconds": null,
+      "stops": [
+        {
+          "id": "T1-19069",
+          "sourceStopID": "19069",
+          "name": "Kabataş",
+          "coordinate": {
+            "latitude": 41.0344412428863,
+            "longitude": 28.9926834498965
+          },
+          "shapeDistanceMeters": 0
+        },
+        {
+          "id": "T1-94902",
+          "sourceStopID": "94902",
+          "name": "Fındıklı - Mimar Sinan Ü.",
+          "coordinate": {
+            "latitude": 41.0314568743665,
+            "longitude": 28.9894457785001
+          },
+          "shapeDistanceMeters": 430
+        },
+        {
+          "id": "T1-19079",
+          "sourceStopID": "19079",
+          "name": "Tophane",
+          "coordinate": {
+            "latitude": 41.0269750176827,
+            "longitude": 28.9807794370462
+          },
+          "shapeDistanceMeters": 1346
+        },
+        {
+          "id": "T1-19093",
+          "sourceStopID": "19093",
+          "name": "Karaköy",
+          "coordinate": {
+            "latitude": 41.0221346688199,
+            "longitude": 28.9746930341564
+          },
+          "shapeDistanceMeters": 2106
+        },
+        {
+          "id": "T1-19092",
+          "sourceStopID": "19092",
+          "name": "Eminönü",
+          "coordinate": {
+            "latitude": 41.0174894537509,
+            "longitude": 28.9731780435299
+          },
+          "shapeDistanceMeters": 2764
+        },
+        {
+          "id": "T1-19077",
+          "sourceStopID": "19077",
+          "name": "Sirkeci",
+          "coordinate": {
+            "latitude": 41.0151864838897,
+            "longitude": 28.9758978638831
+          },
+          "shapeDistanceMeters": 3208
+        },
+        {
+          "id": "T1-19062",
+          "sourceStopID": "19062",
+          "name": "Gülhane",
+          "coordinate": {
+            "latitude": 41.0120113380929,
+            "longitude": 28.9783890557377
+          },
+          "shapeDistanceMeters": 3647
+        },
+        {
+          "id": "T1-19098",
+          "sourceStopID": "19098",
+          "name": "Sultanahmet",
+          "coordinate": {
+            "latitude": 41.0080807903255,
+            "longitude": 28.9756364422636
+          },
+          "shapeDistanceMeters": 4332
+        },
+        {
+          "id": "T1-19074",
+          "sourceStopID": "19074",
+          "name": "Çemberlitaş",
+          "coordinate": {
+            "latitude": 41.0084327683887,
+            "longitude": 28.9712177796904
+          },
+          "shapeDistanceMeters": 4707
+        },
+        {
+          "id": "T1-94901",
+          "sourceStopID": "94901",
+          "name": "Beyazıt - Kapalıçarşı",
+          "coordinate": {
+            "latitude": 41.0090300942008,
+            "longitude": 28.9666544105142
+          },
+          "shapeDistanceMeters": 5095
+        }
+      ],
+      "shape": [
+        {
+          "coordinate": {
+            "latitude": 41.0344412428863,
+            "longitude": 28.9926834498965
+          },
+          "distanceMeters": 0
+        },
+        {
+          "coordinate": {
+            "latitude": 41.03197499653,
+            "longitude": 28.989908044549
+          },
+          "distanceMeters": 360
+        },
+        {
+          "coordinate": {
+            "latitude": 41.029241106072,
+            "longitude": 28.9875865599906
+          },
+          "distanceMeters": 721
+        },
+        {
+          "coordinate": {
+            "latitude": 41.027031413059,
+            "longitude": 28.9808870585921
+          },
+          "distanceMeters": 1335
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0258030407505,
+            "longitude": 28.9783047050235
+          },
+          "distanceMeters": 1592
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0240383146872,
+            "longitude": 28.9758437913612
+          },
+          "distanceMeters": 1877
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0181678126374,
+            "longitude": 28.9718566700873
+          },
+          "distanceMeters": 2610
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0175999146665,
+            "longitude": 28.9721668849832
+          },
+          "distanceMeters": 2678
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0173627385573,
+            "longitude": 28.9742218185187
+          },
+          "distanceMeters": 2853
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0163962789079,
+            "longitude": 28.9764108116158
+          },
+          "distanceMeters": 3066
+        },
+        {
+          "coordinate": {
+            "latitude": 41.014647586553,
+            "longitude": 28.9757858347953
+          },
+          "distanceMeters": 3267
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0123637097932,
+            "longitude": 28.9784733894457
+          },
+          "distanceMeters": 3607
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0109993201992,
+            "longitude": 28.9781275196652
+          },
+          "distanceMeters": 3761
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0102173521245,
+            "longitude": 28.9787210959636
+          },
+          "distanceMeters": 3862
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0084170707176,
+            "longitude": 28.9784669867166
+          },
+          "distanceMeters": 4062.9999999999995
+        },
+        {
+          "coordinate": {
+            "latitude": 41.0078754365728,
+            "longitude": 28.9779264137242
+          },
+          "distanceMeters": 4138
+        }
+      ]
+    },
+    {
+      "id": "F1",
+      "name": "Taksim–Kabataş funicular",
+      "towardForward": "Kabataş",
+      "towardReverse": "Taksim",
+      "openMinute": 360,
+      "closeMinute": 1440,
+      "officialURL": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=F1",
+      "knownFullRideSeconds": 150,
+      "stops": [
+        {
+          "id": "F1-18955",
+          "sourceStopID": "18955",
+          "name": "Taksim",
+          "coordinate": {
+            "latitude": 41.0367093597346,
+            "longitude": 28.9868020056073
+          },
+          "shapeDistanceMeters": 0
+        },
+        {
+          "id": "F1-18954",
+          "sourceStopID": "18954",
+          "name": "Kabataş",
+          "coordinate": {
+            "latitude": 41.034035945894,
+            "longitude": 28.9919382357446
+          },
+          "shapeDistanceMeters": 523
+        }
+      ],
+      "shape": [
+        {
+          "coordinate": {
+            "latitude": 41.0367093597346,
+            "longitude": 28.9868020056073
+          },
+          "distanceMeters": 0
+        },
+        {
+          "coordinate": {
+            "latitude": 41.034035945894,
+            "longitude": 28.9919382357446
+          },
+          "distanceMeters": 524
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "fromStopID": "F1-18954",
+      "toStopID": "T1-19069",
+      "maxWalkingMeters": 350,
+      "sourceURL": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=F1"
+    }
+  ]
+}
