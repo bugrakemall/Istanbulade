@@ -1,0 +1,21 @@
+ISTANBULADE — HAZIR XCODE PROJESİ
+
+1. ZIP'i tamamen klasöre çıkarın.
+2. Mac'te IstanbulHome.xcodeproj dosyasına çift tıklayın.
+3. Üstte IstanbulHome şemasını ve kurulu bir iPhone simülatörünü seçin.
+4. Run (üçgen) düğmesine basın.
+
+Yeni proje oluşturmayın. Dosyaları eski MyApp projesine taşımayın.
+XcodeGen veya ek paket kurulumu gerekmez.
+Minimum iOS sürümü 17.0. Proje yalnızca iOS/iPadOS hedefler.
+Tek uygulama giriş noktası IstanbulHomeApp.swift → HomeView.
+Tests-Reference-Only uygulama hedefine dahil değildir.
+Info.plist konum izni açıklamasını içerir. Görseller ve JSON dosyaları bağlıdır.
+
+Fiziksel iPhone kullanacaksanız Signing & Capabilities altında kendi Team'inizi seçin; gerekirse Bundle Identifier'ı benzersiz yapın. Simülatör için Team seçmeniz gerekmez.
+
+Akış: Ana ekran → To → Sultanahmet Square → Use this place → Compare routes.
+Galata → Sultanahmet kartlarındaki ücretler ve süreler TASARIM ÖRNEĞİDİR.
+Gerçek yürüyüş ve pilot T1/F1 hesabı Calculate available pilot routes düğmesiyle açılır. İnternet gerekir.
+
+Bu proje Windows'ta paketlendi. Xcode derlemesi ve simülatör çalıştırması burada yapılamadı; proje yapısı ve dosya bağlantıları kontrol edildi. Yeni bir derleme hatası çıkarsa tam hata metnini paylaşın.
