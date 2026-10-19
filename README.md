@@ -1,22 +1,32 @@
-# Istanbulade — iOS
+# İstanbul — Şehre karış
 
-Bu repo, gönderilen `Istanbulade-Xcode-Hazir 2.zip` içindeki iOS projesini içerir.
+Türkçe, iPhone için SwiftUI İstanbul keşif uygulaması. 60 mekân, ilçe ve kategori filtreleri, kaydedilenler, günlük durak listesi ve yerel harita içerir. Onaylanan görsel tarzında sekiz mekân çizimi ve dört atmosfer sahnesi bulunur.
 
-## Mac üzerinde açma
+## Çalıştırma
 
-1. Code → Download ZIP ile indirin ve ZIP'i tamamen çıkarın.
-2. `Istanbulade-Xcode-Hazir/IstanbulHome.xcodeproj` dosyasını Xcode ile açın.
-3. `IstanbulHome` şemasını ve kurulu bir iPhone simülatörünü seçin.
-4. ▶ Run düğmesine basın. Yeni proje oluşturmayın ve dosyaları tek tek taşımayın.
+1. Bu depoyu macOS bilgisayarına indir.
+2. Xcode ile `ios/IstanbulGuide.xcodeproj` dosyasını aç.
+3. iOS 17 veya üzeri bir iPhone simülatörü seçip Run düğmesine bas.
+4. Gerçek cihaz için Signing & Capabilities bölümünde kendi Team hesabını ve uygun Bundle Identifier değerini seç.
 
-Minimum iOS sürümü 17.0. Fiziksel iPhone için Signing & Capabilities altında kendi geliştirme takımınızı seçmeniz gerekebilir.
+Kaynaklar ve görseller paket içindedir; API anahtarı veya paket bağımlılığı gerekmez. Çevrimdışı katalog, harita verisi ve cihazda tutulan plan/kayıtlar kullanılır. Dış kaynak bağlantıları internet gerektirir.
 
-## Mevcut akış
+## Dosyalar
 
-Ana ekran → To → yer seçimi → Use this place → Compare routes.
+- `ios/IstanbulApp.swift`: SwiftUI arayüz ve uygulama davranışları.
+- `ios/assets/places.json`: 60 mekânın açıklama, süre, etkinlik ve ilgili keşif kayıtları.
+- `ios/assets/`: çizimler, mevcut gerçek fotoğraflar, yerel harita ve lisans dosyaları.
+- `ios/artwork-manifest.json`: onaylanan çizimlerin üretim istemleri ve boyutları.
+- `CONTENT_UPDATE.md`: içerik kapsamı, kaynaklar ve mevcut sınırlar.
 
-Galata → Sultanahmet karşılaştırma kartlarındaki ücretler ve süreler örnek veridir. Gerçek yürüyüş / pilot T1-F1 hesabına ayrı düğmeyle erişilir; internet gerekir.
+## Mevcut durum
 
-Uygulama kaynakları ve Xcode proje ayarları gönderilen ZIP'ten değiştirilmeden aktarılmıştır. Yalnızca `__MACOSX`, `.DS_Store` ve kişisel `xcuserdata` dosyaları hariç tutulmuştur. `Tests-Reference-Only` uygulama hedefine dahil değildir.
+Bu bir geliştirme prototipidir. Yeni 52 mekânın kendine ait çizimi ve doğrulanmış harita konumu henüz eklenmemiştir; bu yerler isim ve kategori kartlarıyla gösterilir. Harita mevcut sekiz konum ve merkez İstanbul veri kesitiyle sınırlıdır. Süreler editoryal öneridir; güncel fiyat veya açık olma bilgisi sunulmaz. SwiftUI derlemesi Windows ortamında doğrulanamamıştır; Xcode üzerinde derleme ve cihaz testi gerekir. Bu pakette web sürümü bulunmaz.
 
-Bu aktarım sırasında Xcode derlemesi veya iOS cihaz testi çalıştırılmamıştır.
+## Haklar ve kaynaklar
+
+Uygulama koduna açık kaynak lisansı eklenmemiştir. Depoya yüklemek üçüncü taraf varlıkların lisanslarını değiştirmez. Harita, fontlar ve fotoğrafların lisans/atıfları `THIRD_PARTY_NOTICES.md`, `PHOTO_CREDITS.md` ve assets içindeki kayıtlarda korunur. Çizimler OpenAI image_gen ile üretilmiş sanatsal yorumlardır.
+
+## GitHub'a yükleme
+
+ZIP'i açıp bu README ile aynı seviyedeki bütün dosya ve klasörleri deponun köküne yükle. `ios/assets` klasörünü dahil et; proje bu dosyaları kullanır. Gizli `.gitignore` dosyasını da ekle.

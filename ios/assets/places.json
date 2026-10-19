@@ -1,0 +1,1201 @@
+[
+  {
+    "id": "galata",
+    "name": "Galata Kulesi",
+    "district": "Beyoğlu",
+    "category": "Tarih",
+    "photo": 1,
+    "latitude": 41.02566,
+    "longitude": 28.97416,
+    "story": "Galata’nın dar sokaklarında yürürken bir anda karşına çıkar. Taş cephesiyle semtin siluetini belirleyen kuleyi çevresindeki yokuşlar ve küçük dükkânlarla birlikte keşfet.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Kuleyi çevre sokaklardan izle",
+      "Galata yokuşlarında yürüyüş yap"
+    ],
+    "nearby": [
+      "kamondo",
+      "karakoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kiz",
+    "name": "Kız Kulesi",
+    "district": "Üsküdar",
+    "category": "Manzara",
+    "photo": 2,
+    "latitude": 41.02113,
+    "longitude": 29.00411,
+    "story": "Salacak kıyısında dur, vapurları izle. Denizin ortasında Kız Kulesi, arkasında katman katman İstanbul. Günün değişen ışığına biraz zaman ayır.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Salacak kıyısından kuleyi izle",
+      "Vapurların geçişine zaman ayır"
+    ],
+    "nearby": [
+      "salacak",
+      "uskudar"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "sultanahmet",
+    "name": "Sultanahmet",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": 3,
+    "latitude": 41.00541,
+    "longitude": 28.97681,
+    "story": "Kubbeler, avlular ve taş sokaklar. İstanbul’un tarihî merkezini kendi hızında keşfet. İbadet mekânlarında ziyaret kurallarına ve sessizliğe dikkat et.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Meydan ve avluları keşfet",
+      "Kubbe ve minarelerin oranlarını incele"
+    ],
+    "nearby": [
+      "ayasofya",
+      "yerebatan"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "karakoy",
+    "name": "Karaköy sokakları",
+    "district": "Beyoğlu",
+    "category": "Lezzet",
+    "photo": 8,
+    "latitude": 41.02426,
+    "longitude": 28.97792,
+    "story": "İskele çevresinin hareketi ara sokaklardaki kafelere karışır. Bir kahve molası ver, sonra kıyıya doğru yürü. Bu öneri bir semt keşfidir; belirli bir işletmenin reklamı değildir.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Kafe sokaklarında kısa yürüyüş yap",
+      "Kıyıya doğru devam et"
+    ],
+    "nearby": [
+      "galata",
+      "modern"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "gulhane",
+    "name": "Gülhane Parkı",
+    "district": "Fatih",
+    "category": "Manzara",
+    "photo": 4,
+    "latitude": 41.01315,
+    "longitude": 28.98113,
+    "story": "Tarihî yarımadayı gezerken ağaçların altında bir mola. Otur, etrafına bak ve gezine biraz boşluk bırak.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Ağaçların altında yürü",
+      "Banklarda dinlenme molası ver"
+    ],
+    "nearby": [
+      "arkeoloji",
+      "topkapi"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "eminonu",
+    "name": "Eminönü kıyısı",
+    "district": "Fatih",
+    "category": "Lezzet",
+    "photo": 5,
+    "latitude": 41.01725,
+    "longitude": 28.97083,
+    "story": "İskeleler, hareketli sokaklar ve Haliç’in ağzında buluşan manzaralar. Kıyı boyunca yürürken vapurların geliş gidişine kulak ver.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Vapur iskelelerini izle",
+      "Çarşı çevresini keşfet"
+    ],
+    "nearby": [
+      "misir",
+      "yenicami"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "balat",
+    "name": "Balat",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": 6,
+    "latitude": 41.02942,
+    "longitude": 28.94975,
+    "story": "Haliç’e uzanan yokuşlarda farklı dönemlerin izleri yan yana. Burası yaşayan bir mahalle; fotoğraf çekerken evlerin ve insanların mahremiyetine saygı göster.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Yokuşlarda cephe ayrıntılarını ara",
+      "Haliç kıyısına in"
+    ],
+    "nearby": [
+      "fener",
+      "kariye"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "ortakoy",
+    "name": "Ortaköy kıyısı",
+    "district": "Beşiktaş",
+    "category": "Manzara",
+    "photo": 7,
+    "latitude": 41.04723,
+    "longitude": 29.02708,
+    "story": "Boğaz’dan geçen tekneler ve karşı kıyının silueti. Küçük meydandan çevredeki sokaklara uzanarak keşfini sürdür.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Meydan ve kıyıda yürü",
+      "Boğaz siluetini izle"
+    ],
+    "nearby": [
+      "yildiz",
+      "denizmuzesi"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "ayasofya",
+    "name": "Ayasofya",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Büyük kubbesi ve katmanlı mimarisiyle tarihî yarımadanın odaklarından biri.",
+    "duration": "60–90 dk",
+    "activities": [
+      "Meydandan yapının farklı cephelerini izle",
+      "Ziyaret edilebilen bölümlerin mimarisini incele"
+    ],
+    "nearby": [
+      "sultanahmet",
+      "topkapi"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "topkapi",
+    "name": "Topkapı Sarayı",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Avluları ve koleksiyonlarıyla saray yaşamını keşfetmek için geniş zaman ayırılacak bir durak.",
+    "duration": "3–4 saat",
+    "activities": [
+      "Avluları sırayla gez",
+      "Koleksiyonlardan ilgini çeken bölümleri seç"
+    ],
+    "nearby": [
+      "arkeoloji",
+      "gulhane"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "yerebatan",
+    "name": "Yerebatan Sarnıcı",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Yer altındaki sütunlu mekân, yarımada gezisine farklı bir atmosfer katar.",
+    "duration": "45–75 dk",
+    "activities": [
+      "Sütunlar arasındaki yürüyüşü takip et",
+      "Medusa başlarını incele"
+    ],
+    "nearby": [
+      "ayasofya",
+      "sultanahmet"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "arkeoloji",
+    "name": "İstanbul Arkeoloji Müzeleri",
+    "district": "Fatih",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Arkeoloji koleksiyonlarına odaklanan, acele etmeden gezilecek bir müze durağı.",
+    "duration": "2–3 saat",
+    "activities": [
+      "Koleksiyonlardan bir tema seç",
+      "Avluda kısa bir mola ver"
+    ],
+    "nearby": [
+      "topkapi",
+      "gulhane"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "turkislam",
+    "name": "Türk ve İslam Eserleri Müzesi",
+    "district": "Fatih",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Sultanahmet gezisinde el sanatları ve eserler üzerinden kültürle buluş.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Koleksiyonları malzemelerine göre keşfet",
+      "Meydan gezisiyle birleştir"
+    ],
+    "nearby": [
+      "sultanahmet",
+      "arasta"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "suleymaniye",
+    "name": "Süleymaniye Camii",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Mimariyi ve Haliç çevresinin siluetini birlikte değerlendirebileceğin bir durak.",
+    "duration": "45–75 dk",
+    "activities": [
+      "Avlu ve dış cepheyi incele",
+      "Çevredeki sokaklarda kısa yürüyüş yap"
+    ],
+    "nearby": [
+      "kapalicarsi",
+      "eminonu"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kapalicarsi",
+    "name": "Kapalıçarşı",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Kapalı sokaklar ve dükkânlar arasında İstanbul'un ticaret hayatını hisset.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Sokakların mimarisine bak",
+      "El işi ürünleri karşılaştır"
+    ],
+    "nearby": [
+      "suleymaniye",
+      "misir"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "misir",
+    "name": "Mısır Çarşısı",
+    "district": "Fatih",
+    "category": "Lezzet",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Baharat ve yiyecek dükkânlarıyla Eminönü keşfine duyusal bir mola ekle.",
+    "duration": "30–60 dk",
+    "activities": [
+      "Baharat tezgâhlarını keşfet",
+      "Çarşı çevresindeki sokakları dolaş"
+    ],
+    "nearby": [
+      "eminonu",
+      "yenicami"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "yenicami",
+    "name": "Yeni Cami",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Eminönü meydanının mimari odağını yakından tanı.",
+    "duration": "30–45 dk",
+    "activities": [
+      "Avlu çevresini incele",
+      "Meydandaki vapur hareketini izle"
+    ],
+    "nearby": [
+      "misir",
+      "eminonu"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "arasta",
+    "name": "Arasta Çarşısı",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Sultanahmet'in yakınındaki daha küçük ölçekli çarşıda kısa bir keşif yap.",
+    "duration": "30–45 dk",
+    "activities": [
+      "Dükkân cephelerine bak",
+      "Dokuma ve seramikleri keşfet"
+    ],
+    "nearby": [
+      "sultanahmet",
+      "turkislam"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kariye",
+    "name": "Kariye Camii",
+    "district": "Fatih",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Bizans sanatına ilgi duyanlar için önemli bir mimari durak.",
+    "duration": "45–75 dk",
+    "activities": [
+      "Ziyarete açık bölümlerdeki sanat ayrıntılarını incele",
+      "Çevre sokaklarda yürü"
+    ],
+    "nearby": [
+      "balat",
+      "fener"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "fener",
+    "name": "Fener sokakları",
+    "district": "Fatih",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Haliç kıyısındaki sokak dokusunu ve mahalle ölçeğini keşfet.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Yokuşlarda farklı sokakları karşılaştır",
+      "Kıyıya inip mola ver"
+    ],
+    "nearby": [
+      "balat",
+      "rahmikoc"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "dolmabahce",
+    "name": "Dolmabahçe Sarayı",
+    "district": "Beşiktaş",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Boğaz kıyısındaki saray mimarisiyle farklı bir İstanbul katmanını gör.",
+    "duration": "2–3 saat",
+    "activities": [
+      "Ziyarete açık saray bölümlerini gez",
+      "Kıyı cephesi ve bahçe ayrıntılarını incele"
+    ],
+    "nearby": [
+      "denizmuzesi",
+      "macka"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "denizmuzesi",
+    "name": "Deniz Müzesi",
+    "district": "Beşiktaş",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "İstanbul'un denizle ilişkisini müze koleksiyonları üzerinden keşfet.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Tarihî kayıklara bak",
+      "Denizcilik ayrıntılarını incele"
+    ],
+    "nearby": [
+      "dolmabahce",
+      "yildiz"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "yildiz",
+    "name": "Yıldız Parkı",
+    "district": "Beşiktaş",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Şehrin yoğunluğuna ağaçlar arasında yürüyüş molası ver.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Park yollarında yürü",
+      "Gölgede dinlen"
+    ],
+    "nearby": [
+      "ortakoy",
+      "denizmuzesi"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "macka",
+    "name": "Maçka Demokrasi Parkı",
+    "district": "Şişli",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Merkezdeki gezine yeşil bir ara ekle.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Yürüyüş yollarını keşfet",
+      "Oturup günün planını gözden geçir"
+    ],
+    "nearby": [
+      "dolmabahce",
+      "akm"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "istiklal",
+    "name": "İstiklal Caddesi",
+    "district": "Beyoğlu",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Pasajlar ve farklı dönemlerin cepheleriyle hareketli bir şehir yürüyüşü yap.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Binaların üst kat ayrıntılarını izle",
+      "Ara sokaklara kısa sapmalar yap"
+    ],
+    "nearby": [
+      "pera",
+      "cicek"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "pera",
+    "name": "Pera Müzesi",
+    "district": "Beyoğlu",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Beyoğlu gezisini sanatla birleştirmek için bir müze molası ver.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Güncel sergi programından bir seçki belirle",
+      "Eserleri acele etmeden incele"
+    ],
+    "nearby": [
+      "istiklal",
+      "galata"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "modern",
+    "name": "İstanbul Modern",
+    "district": "Beyoğlu",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Karaköy kıyısında modern ve çağdaş sanatla buluş.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Güncel sergilerden ilgini çekeni seç",
+      "Kıyı yürüyüşüyle birleştir"
+    ],
+    "nearby": [
+      "karakoy",
+      "galataport"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "galataport",
+    "name": "Galataport kıyısı",
+    "district": "Beyoğlu",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Karaköy kıyısından Boğaz'a açılan bir yürüyüş yap.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Sahil boyunca yürü",
+      "Karşı kıyının siluetini izle"
+    ],
+    "nearby": [
+      "modern",
+      "karakoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kamondo",
+    "name": "Kamondo Merdivenleri",
+    "district": "Beyoğlu",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Galata yokuşlarında kıvrımlı merdiven mimarisiyle kısa bir durak ver.",
+    "duration": "15–30 dk",
+    "activities": [
+      "Merdivenin biçimini farklı açılardan incele",
+      "Yukarı sokaklara devam et"
+    ],
+    "nearby": [
+      "galata",
+      "karakoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "cicek",
+    "name": "Çiçek Pasajı",
+    "district": "Beyoğlu",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "İstiklal üzerindeki pasaj mimarisini keşfet.",
+    "duration": "20–40 dk",
+    "activities": [
+      "Pasajın üst örtüsüne ve cephelerine bak",
+      "Cadde yürüyüşüne kısa mola ekle"
+    ],
+    "nearby": [
+      "istiklal",
+      "pera"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "akm",
+    "name": "Atatürk Kültür Merkezi",
+    "district": "Beyoğlu",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Taksim gezisinde kültür ve mimariye zaman ayır.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Ziyarete açık alanları keşfet",
+      "Güncel etkinlik programını incele"
+    ],
+    "nearby": [
+      "istiklal",
+      "macka"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "rahmikoc",
+    "name": "Rahmi M. Koç Müzesi",
+    "district": "Beyoğlu",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Ulaşım ve sanayi mirasını somut nesneler üzerinden keşfet.",
+    "duration": "2–3 saat",
+    "activities": [
+      "Ulaşım koleksiyonlarına bak",
+      "İlgini çeken teknik ayrıntıları karşılaştır"
+    ],
+    "nearby": [
+      "miniaturk",
+      "fener"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "miniaturk",
+    "name": "Miniatürk",
+    "district": "Beyoğlu",
+    "category": "Kültür",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Mimari modeller üzerinden farklı yapıların biçimlerini karşılaştır.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Modellerdeki küçük ayrıntıları bul",
+      "Gezmek istediğin yapıları not et"
+    ],
+    "nearby": [
+      "rahmikoc",
+      "pierreloti"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "pierreloti",
+    "name": "Pierre Loti Tepesi",
+    "district": "Eyüpsultan",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Haliç'in kıvrımlarını yüksekten izleyerek gezine yavaş bir an ekle.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Manzarada kıyı çizgisini takip et",
+      "Oturup kısa mola ver"
+    ],
+    "nearby": [
+      "eyup",
+      "miniaturk"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "eyup",
+    "name": "Eyüpsultan çevresi",
+    "district": "Eyüpsultan",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Meydan ve çevre sokaklarıyla İstanbul'un ziyaret kültürüne yaklaş.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Meydan dokusunu keşfet",
+      "Cami çevresinde sakin bir yürüyüş yap"
+    ],
+    "nearby": [
+      "pierreloti",
+      "balat"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "emirgan",
+    "name": "Emirgan Korusu",
+    "district": "Sarıyer",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Boğaz gezisine ağaçlar ve park yolları arasında mola ekle.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Koru yollarında yürü",
+      "Mevsimsel bitki renklerini gözlemle"
+    ],
+    "nearby": [
+      "rumelihisari",
+      "arboretum"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "rumelihisari",
+    "name": "Rumeli Hisarı çevresi",
+    "district": "Sarıyer",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Boğaz kıyısındaki hisar siluetini ve daralan su yolunu birlikte gör.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Kıyı boyunca hisarın dış görünümünü izle",
+      "Boğaz geçişlerini gözlemle"
+    ],
+    "nearby": [
+      "emirgan",
+      "ortakoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "arboretum",
+    "name": "Atatürk Arboretumu",
+    "district": "Sarıyer",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Ağaç koleksiyonlarına odaklanan sakin bir açık hava keşfi yap.",
+    "duration": "2–3 saat",
+    "activities": [
+      "Bitki etiketlerini incele",
+      "Yürüyüş sırasında farklı ağaç biçimlerini karşılaştır"
+    ],
+    "nearby": [
+      "belgrad",
+      "emirgan"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "belgrad",
+    "name": "Belgrad Ormanı",
+    "district": "Sarıyer",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Kent merkezinin temposundan uzaklaşarak ormanda yürüyüşe zaman ayır.",
+    "duration": "2–4 saat",
+    "activities": [
+      "İşaretli yürüyüş alanlarını tercih et",
+      "Ağaçların altında dinlen"
+    ],
+    "nearby": [
+      "arboretum",
+      "kemerburgaz"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kemerburgaz",
+    "name": "Kemerburgaz Kent Ormanı",
+    "district": "Eyüpsultan",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Geniş açık hava alanlarında daha uzun bir doğa molası planla.",
+    "duration": "2–3 saat",
+    "activities": [
+      "Yürüyüş alanlarını keşfet",
+      "Dinlenme aralarıyla kendi temponu kur"
+    ],
+    "nearby": [
+      "belgrad",
+      "miniaturk"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "ataturkkent",
+    "name": "Atatürk Kent Ormanı",
+    "district": "Sarıyer",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Şehir içinde ağaçlar arasında daha sakin bir keşif yap.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Park yollarında yürü",
+      "Bitki ve kuş seslerine odaklan"
+    ],
+    "nearby": [
+      "emirgan",
+      "belgrad"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "uskudar",
+    "name": "Üsküdar Meydanı ve kıyısı",
+    "district": "Üsküdar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "İskele hareketi ve karşı kıyı manzarasıyla Anadolu yakasına başla.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Meydan çevresindeki mimariye bak",
+      "Kıyıda kısa yürüyüş yap"
+    ],
+    "nearby": [
+      "salacak",
+      "kuzguncuk"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "salacak",
+    "name": "Salacak kıyısı",
+    "district": "Üsküdar",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Kız Kulesi'ni kıyıdan izleyerek günün değişen ışığını yakala.",
+    "duration": "45–90 dk",
+    "activities": [
+      "Kıyı boyunca yürü",
+      "Karşı yarımadanın siluetini izle"
+    ],
+    "nearby": [
+      "kiz",
+      "uskudar"
+    ],
+    "source": "https://istanbuluseyret.ibb.istanbul/tr/turistik-kamera/salacak"
+  },
+  {
+    "id": "kuzguncuk",
+    "name": "Kuzguncuk",
+    "district": "Üsküdar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Küçük sokaklar ve ahşap cephelerle mahalle ölçeğinde keşif yap.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Ara sokaklarda yürü",
+      "Kıyıda bir mola ver"
+    ],
+    "nearby": [
+      "fethipasa",
+      "beylerbeyi"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "fethipasa",
+    "name": "Fethi Paşa Korusu",
+    "district": "Üsküdar",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Üsküdar gezisinde ağaçlar ve Boğaz manzarasına zaman ayır.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Koru yollarında yürü",
+      "Açık noktalardan kıyıyı izle"
+    ],
+    "nearby": [
+      "kuzguncuk",
+      "uskudar"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "beylerbeyi",
+    "name": "Beylerbeyi Sarayı",
+    "district": "Üsküdar",
+    "category": "Tarih",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Anadolu yakasında saray mimarisini kıyı gezisiyle birleştir.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Ziyarete açık bölümleri gez",
+      "Dış cephe ve bahçe ayrıntılarına bak"
+    ],
+    "nearby": [
+      "kuzguncuk",
+      "cengelkoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "cengelkoy",
+    "name": "Çengelköy",
+    "district": "Üsküdar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Boğaz kıyısındaki mahallede kısa sokak yürüyüşleri yap.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Kıyı manzarasını izle",
+      "Ara sokaklarda mola ver"
+    ],
+    "nearby": [
+      "beylerbeyi",
+      "kuzguncuk"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "camlica",
+    "name": "Büyük Çamlıca Tepesi",
+    "district": "Üsküdar",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "İstanbul'un geniş ölçeğini yüksekten görmeye zaman ayır.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Açık havada şehir siluetini izle",
+      "Yürüyüş ve dinlenme araları yap"
+    ],
+    "nearby": [
+      "uskudar",
+      "beylerbeyi"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kadikoy",
+    "name": "Kadıköy Çarşısı",
+    "district": "Kadıköy",
+    "category": "Lezzet",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Yiyecek dükkânları ve canlı sokaklarla Anadolu yakasının gündelik hayatına karış.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Çarşı sokaklarını dolaş",
+      "Kendi tercihine göre bir lezzet molası seç"
+    ],
+    "nearby": [
+      "moda",
+      "yeldegirmeni"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "moda",
+    "name": "Moda",
+    "district": "Kadıköy",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Sokak keşfini kıyıda dinlenmeyle bir araya getir.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Mahalle sokaklarında yürü",
+      "Kıyıda vapurları izle"
+    ],
+    "nearby": [
+      "kadikoy",
+      "fenerbahce"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "yeldegirmeni",
+    "name": "Yeldeğirmeni",
+    "district": "Kadıköy",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Kadıköy çevresinde mahalle dokusu ve duvar sanatıyla keşif yap.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Cephe ve duvar resimlerini ara",
+      "Küçük bir kahve molası ver"
+    ],
+    "nearby": [
+      "kadikoy",
+      "moda"
+    ],
+    "source": "https://istanbulseninhaber.ibb.istanbul/haber-detay/tarih-ve-kulturun-bulusma-noktasi-yeldegirmeni"
+  },
+  {
+    "id": "fenerbahce",
+    "name": "Fenerbahçe Parkı",
+    "district": "Kadıköy",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Deniz kenarında ağaçlar ve yürüyüşle sakin bir mola ver.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Park yollarında dolaş",
+      "Denize bakan bir noktada dinlen"
+    ],
+    "nearby": [
+      "moda",
+      "caddebostan"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "caddebostan",
+    "name": "Caddebostan sahili",
+    "district": "Kadıköy",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Marmara kıyısında geniş bir açık hava yürüyüşü yap.",
+    "duration": "1–2 saat",
+    "activities": [
+      "Sahil boyunca yürü",
+      "Çim alanlarda kısa mola ver"
+    ],
+    "nearby": [
+      "fenerbahce",
+      "moda"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "buyukada",
+    "name": "Büyükada",
+    "district": "Adalar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Adanın sokakları ve deniz çevresi için geniş bir gün ayır.",
+    "duration": "Tam gün",
+    "activities": [
+      "Merkezden sakin sokaklara yürü",
+      "Kıyıda dinlenme molası ver"
+    ],
+    "nearby": [
+      "heybeli",
+      "burgaz"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "heybeli",
+    "name": "Heybeliada",
+    "district": "Adalar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Ada hayatını yürüyerek ve denize zaman ayırarak keşfet.",
+    "duration": "Tam gün",
+    "activities": [
+      "Merkez sokaklarını dolaş",
+      "Yeşil çevrede kendi temponda yürü"
+    ],
+    "nearby": [
+      "buyukada",
+      "burgaz"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "burgaz",
+    "name": "Burgazada",
+    "district": "Adalar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Daha küçük ölçekli bir ada keşfinde sokakları ve kıyıyı birleştir.",
+    "duration": "Yarım gün",
+    "activities": [
+      "İskele çevresinden yürüyüşe başla",
+      "Deniz kenarında mola ver"
+    ],
+    "nearby": [
+      "heybeli",
+      "kinali"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "kinali",
+    "name": "Kınalıada",
+    "district": "Adalar",
+    "category": "Semt",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Kısa bir ada kaçamağında kıyı yaşamını gözlemle.",
+    "duration": "Yarım gün",
+    "activities": [
+      "Merkez sokaklarını dolaş",
+      "Kıyı boyunca yürüyüş yap"
+    ],
+    "nearby": [
+      "burgaz",
+      "heybeli"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "sile",
+    "name": "Şile merkezi ve kıyısı",
+    "district": "Şile",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Karadeniz kıyısında kent merkezinden farklı bir İstanbul deneyimi yaşa.",
+    "duration": "Tam gün",
+    "activities": [
+      "Kıyı manzaralarını keşfet",
+      "Merkezde kısa yürüyüş yap"
+    ],
+    "nearby": [
+      "agva",
+      "polonezkoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "agva",
+    "name": "Ağva",
+    "district": "Şile",
+    "category": "Manzara",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Nehir çevresi ve Karadeniz kıyısını aynı gezide keşfet.",
+    "duration": "Tam gün",
+    "activities": [
+      "Nehir çevresinde yürüyüş yap",
+      "Kıyıdaki manzaraya zaman ayır"
+    ],
+    "nearby": [
+      "sile",
+      "polonezkoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  },
+  {
+    "id": "polonezkoy",
+    "name": "Polonezköy",
+    "district": "Beykoz",
+    "category": "Doğa",
+    "photo": -1,
+    "latitude": 0,
+    "longitude": 0,
+    "story": "Yeşil çevre içinde daha yavaş bir mahalle ve doğa keşfi planla.",
+    "duration": "Yarım gün",
+    "activities": [
+      "Yerleşim çevresinde yürü",
+      "Doğada dinlenme araları ver"
+    ],
+    "nearby": [
+      "cengelkoy"
+    ],
+    "source": "https://goturkiye.com/istanbul/destinations"
+  }
+]

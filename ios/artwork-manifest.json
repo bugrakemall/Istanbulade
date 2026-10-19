@@ -1,0 +1,90 @@
+{
+  "generator": "OpenAI built-in image_gen",
+  "style": "User-approved matte warm Istanbul illustration",
+  "artworks": [
+    {
+      "id": "galata",
+      "prompt": "User-approved Galata artwork, preserved byte-for-byte.",
+      "file": "assets/illustration-galata-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "kiz",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: Kız Kulesi, accurately shaped small historic tower on its tiny islet, viewed from Salacak waterfront, calm blue water and a ferry; square",
+      "file": "assets/illustration-kiz-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "sultanahmet",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: Sultanahmet Blue Mosque, recognizable central dome cascading smaller domes and SIX slender minarets, viewed from garden square with fountain; square",
+      "file": "assets/illustration-sultanahmet-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "karakoy",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: present-day Karaköy narrow cafe street with restrained terracotta awnings, contemporary pedestrians, distant glimpse of Galata tower; square",
+      "file": "assets/illustration-karakoy-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "gulhane",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: Gülhane Park in Istanbul, broad shaded pedestrian path between mature plane trees and low flowerbeds, benches and a few walkers, historic garden walls, NO mosque focal point; square",
+      "file": "assets/illustration-gulhane-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "eminonu",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: Eminönü waterfront, ferry piers and recognizable Yeni Cami domes and minarets in background, blue Golden Horn water, a few walkers; square",
+      "file": "assets/illustration-eminonu-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "balat",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: Balat Istanbul, believable narrow sloping street with colorful historic row houses, muted pastel facades, bay windows, quiet contemporary neighborhood; square",
+      "file": "assets/illustration-balat-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "ortakoy",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: Ortaköy waterfront with recognizable small ornate Ortaköy Mosque with TWO minarets, Bosphorus bridge behind, quiet square and water; square",
+      "file": "assets/illustration-ortakoy-calm.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "scene-ferry",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: View from deck of an Istanbul passenger ferry, cream railing framing deep blue Bosphorus and distant Istanbul historic skyline, warm quiet late afternoon. Portrait 2:3",
+      "file": "assets/scene-ferry-calm.png",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "scene-street",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: immersive eye-level Karaköy Istanbul street, cafes with terracotta awnings and warm ivory facades, gentle slope to distant blue waterfront, understated contemporary walkers. Portrait 2:3",
+      "file": "assets/scene-street-calm.png",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "scene-coast",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: wide Istanbul waterfront promenade, benches and a few walkers, blue Bosphorus and ferry with historic peninsula skyline in distance. Landscape 16:9",
+      "file": "assets/scene-coast-calm.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "scene-park",
+      "prompt": "Use case: illustration-story. Create a new standalone artwork in EXACT visual style of provided reference image (style reference only). Match its matte editorial illustrated realism, precise clean architectural contours, restrained natural fine detail, warm ivory and terracotta buildings, dusty peach sky, muted blue water and soft sage foliage. Calm diffuse late afternoon light, understated dimensional shading, no shiny surfaces, no glass, no glare, no glow, no grain, no text, no watermark. Believable present-day Istanbul subject with recognizable landmark proportions, artistic interpretation not a survey. Crisp full bleed independent composition, no collage, no UI. Subject: immersive shady Gülhane park path lined with tall plane trees, soft dappled light, elegant low garden planting and benches, quiet walkers. Square",
+      "file": "assets/scene-park-calm.png",
+      "width": 1254,
+      "height": 1254
+    }
+  ]
+}
