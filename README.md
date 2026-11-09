@@ -1,32 +1,28 @@
-# İstanbul — Şehre karış
+# Istanbul Explorer
 
-Türkçe, iPhone için SwiftUI İstanbul keşif uygulaması. 60 mekân, ilçe ve kategori filtreleri, kaydedilenler, günlük durak listesi ve yerel harita içerir. Onaylanan görsel tarzında sekiz mekân çizimi ve dört atmosfer sahnesi bulunur.
+Bu paket Figma’daki ilk altı ekranı içerir: karşılama, ana ekran, kategoriler, yer listesi, yer detayı ve galeri. **Categories → Historical Places → Hagia Sophia** ile detay ekranına ulaşılır. Ana ekrandaki kartlar da detayı açar.
 
-## Çalıştırma
+Kalp, yeri cihazda favori olarak kaydeder. Favoriler sekmesinin listesi daha sonra eklenecek. **View Gallery**, iki sütunda on görsellik İstanbul galerisini açar; görsele dokununca büyür. **Play Audio Guide** düğmesi görünür ama şimdilik pasiftir; ses dosyaları pakete dahil değildir.
 
-1. Bu depoyu macOS bilgisayarına indir.
-2. Xcode ile `ios/IstanbulGuide.xcodeproj` dosyasını aç.
-3. iOS 17 veya üzeri bir iPhone simülatörü seçip Run düğmesine bas.
-4. Gerçek cihaz için Signing & Capabilities bölümünde kendi Team hesabını ve uygun Bundle Identifier değerini seç.
+Rehber metinleri için kaynaklar: [UNESCO — İstanbul’un Tarihî Alanları](https://whc.unesco.org/en/list/356), [Go Türkiye — Sultanahmet Camii](https://goturkiye.com/istanbul/blue-mosque), [Kız Kulesi](https://goturkiye.com/istanbul/maidens-tower), [Ortaköy](https://goturkiye.com/istanbul/ortakoy) ve [İstanbul gezi rehberi](https://goturkiye.com/branding/press-releases/live-an-unforgettable-48-hours-in-istanbul).
 
-Kaynaklar ve görseller paket içindedir; API anahtarı veya paket bağımlılığı gerekmez. Çevrimdışı katalog, harita verisi ve cihazda tutulan plan/kayıtlar kullanılır. Dış kaynak bağlantıları internet gerektirir.
+Mac’te `IstanbulExplorer.xcodeproj` dosyasını aç, iPhone simülatörü seç ve Run’a bas. Minimum iOS 17.
 
-## Dosyalar
+Girişteki kaydırma için [SlideButton 1.3.0](https://github.com/no-comment/SlideButton/tree/v1.3.0) kullanılır (MIT). Xcode paketi Swift Package Manager ile ilk açılışta indirir; bunun için internet gerekir. Paketi elle eklemene gerek yok.
 
-- `ios/IstanbulApp.swift`: SwiftUI arayüz ve uygulama davranışları.
-- `ios/assets/places.json`: 60 mekânın açıklama, süre, etkinlik ve ilgili keşif kayıtları.
-- `ios/assets/`: çizimler, mevcut gerçek fotoğraflar, yerel harita ve lisans dosyaları.
-- `ios/artwork-manifest.json`: onaylanan çizimlerin üretim istemleri ve boyutları.
-- `CONTENT_UPDATE.md`: içerik kapsamı, kaynaklar ve mevcut sınırlar.
+- `IstanbulExplorerApp.swift`: Karşılama ve ana ekran arasında geçiş.
+- `WelcomeView.swift`: Başlık, oynatma kontrolü ve giriş alanı.
+- `SunsetScene.swift`: Açılışta otomatik başlayan, 12 saniyelik hafif kamera hareketi. Ortadaki düğmeyle duraklatılır; Hareketi Azalt açıksa görsel sabit kalır. Video dosyası yoktur.
+- `SlideToExplore.swift`: Hazır SlideButton bileşenine sarı rengi, yazıyı ve ana ekrana geçiş işlemini verir.
+- `ExplorerHomeView.swift`: Ana ekran, arama ve popüler yerler.
+- `ExplorerCategoryCards.swift`: Ana ekrandaki üç renkli kategori kısayolu.
+- `ExplorerMainView.swift`: SwiftUI TabView ve kategori listesine geçiş. Favorites ve About şimdilik boş durum gösterir.
+- `CategoriesView.swift`: Büyük görselli üç kategori kartı.
+- `CategoryPlacesView.swift`: Seçili kategorinin görselli ve açıklamalı yer listesi.
+- `PlaceDetailView.swift`: Yer bilgisi, favori kalbi ve galeri düğmesi.
+- `AudioGuideView.swift`: Sesli rehber için pasif SwiftUI düğmesi.
+- `GalleryView.swift`: İki sütunlu İstanbul galerisi ve büyük görsel önizlemesi.
+- `ExplorerPlace.swift`: Kayıtlı örnek yerler ve kategoriler.
+- `ExplorerArtwork.swift`: Fotoğraf koleksiyonundan doğru kareyi gösterir.
 
-## Mevcut durum
-
-Bu bir geliştirme prototipidir. Yeni 52 mekânın kendine ait çizimi ve doğrulanmış harita konumu henüz eklenmemiştir; bu yerler isim ve kategori kartlarıyla gösterilir. Harita mevcut sekiz konum ve merkez İstanbul veri kesitiyle sınırlıdır. Süreler editoryal öneridir; güncel fiyat veya açık olma bilgisi sunulmaz. SwiftUI derlemesi Windows ortamında doğrulanamamıştır; Xcode üzerinde derleme ve cihaz testi gerekir. Bu pakette web sürümü bulunmaz.
-
-## Haklar ve kaynaklar
-
-Uygulama koduna açık kaynak lisansı eklenmemiştir. Depoya yüklemek üçüncü taraf varlıkların lisanslarını değiştirmez. Harita, fontlar ve fotoğrafların lisans/atıfları `THIRD_PARTY_NOTICES.md`, `PHOTO_CREDITS.md` ve assets içindeki kayıtlarda korunur. Çizimler OpenAI image_gen ile üretilmiş sanatsal yorumlardır.
-
-## GitHub'a yükleme
-
-ZIP'i açıp bu README ile aynı seviyedeki bütün dosya ve klasörleri deponun köküne yükle. `ios/assets` klasörünü dahil et; proje bu dosyaları kullanır. Gizli `.gitignore` dosyasını da ekle.
+Proje bağlantıları Windows’ta kontrol edildi; Xcode derlemesi ve simülatör görünümü henüz doğrulanmadı.

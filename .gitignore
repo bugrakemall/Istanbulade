@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+*.ipa
+*.mobileprovision
+*.p12
+.env
+.env.*
