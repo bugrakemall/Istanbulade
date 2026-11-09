@@ -30,7 +30,7 @@ DA0000000000000000000013 = {isa = PBXFileReference; lastKnownFileType = "sourcec
 DB0000000000000000000013 = {isa = PBXBuildFile; fileRef = DA0000000000000000000013; };
 DA0000000000000000000014 = {isa = PBXFileReference; lastKnownFileType = "folder.assetcatalog"; path = "Assets.xcassets"; sourceTree = "<group>"; };
 DB0000000000000000000014 = {isa = PBXBuildFile; fileRef = DA0000000000000000000014; };
-DC0000000000000000000000 = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/no-comment/SlideButton.git"; requirement = {kind = exactVersion; version = 1.3.0; }; };
+DC0000000000000000000000 = {isa = XCLocalSwiftPackageReference; relativePath = "Vendor/SlideButton"; };
 DC0000000000000000000001 = {isa = XCSwiftPackageProductDependency; package = DC0000000000000000000000; productName = SlideButton; };
 DC0000000000000000000002 = {isa = PBXBuildFile; productRef = DC0000000000000000000001; };
 A8792157CB4F27FB949C035F = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IstanbulExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };

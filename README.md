@@ -8,7 +8,7 @@ Rehber metinleri için kaynaklar: [UNESCO — İstanbul’un Tarihî Alanları](
 
 Mac’te `IstanbulExplorer.xcodeproj` dosyasını aç, iPhone simülatörü seç ve Run’a bas. Minimum iOS 17.
 
-Girişteki kaydırma için [SlideButton 1.3.0](https://github.com/no-comment/SlideButton/tree/v1.3.0) kullanılır (MIT). Xcode paketi Swift Package Manager ile ilk açılışta indirir; bunun için internet gerekir. Paketi elle eklemene gerek yok.
+Girişteki kaydırma için [SlideButton 1.3.0](https://github.com/no-comment/SlideButton/tree/v1.3.0) kullanılır (MIT). Paket `Vendor/SlideButton` klasöründe hazırdır ve Xcode projesine yerel bağımlılık olarak bağlıdır. ZIP’i tamamen çıkar; `Vendor` klasörü `IstanbulExplorer.xcodeproj` ile yan yana kalmalı. Paketi GitHub’dan tekrar indirmeye veya Xcode’a elle eklemeye gerek yok.
 
 - `IstanbulExplorerApp.swift`: Karşılama ve ana ekran arasında geçiş.
 - `WelcomeView.swift`: Başlık, oynatma kontrolü ve giriş alanı.

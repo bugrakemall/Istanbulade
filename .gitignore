@@ -2,6 +2,7 @@
 Thumbs.db
 DerivedData/
 build/
+.build/
 xcuserdata/
 *.xcuserstate
 *.ipa
