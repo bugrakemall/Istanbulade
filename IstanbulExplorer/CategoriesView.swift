@@ -10,10 +10,13 @@ struct CategoriesView: View {
                     .accessibilityAddTraits(.isHeader)
                     .padding(.vertical, 4)
 
+                // Ana ekrandaki küçük kartlarla aynı kategori verisini, büyük kartlarla gösterir.
                 ForEach(ExplorerCategory.allCases) { category in
+                    // Hedef ekran ExplorerMainView içindeki navigationDestination ile belirlenir.
                     NavigationLink(value: category) {
                         ExplorerArtwork(photo: category.coverPhoto)
                             .frame(height: 166)
+                            // Yazıyı resmin üstüne koyarız; alttaki koyu geçiş okunurluğu artırır.
                             .overlay(alignment: .bottom) {
                                 HStack {
                                     Text(category.rawValue)

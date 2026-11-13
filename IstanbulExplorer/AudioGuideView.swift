@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Tasarımdaki yerini koruyan pasif kontrol: oynatıcı ve ses dosyası bu sürümde yoktur.
 struct AudioGuideView: View {
     var body: some View {
         // Sesli rehber geri gelene kadar düğme sadece görünür.
@@ -11,6 +12,7 @@ struct AudioGuideView: View {
         }
         .buttonStyle(.plain)
         .foregroundStyle(.secondary)
+        // Boş action yanlışlıkla çalışan bir rehber sanılmasın; etkileşim kapalıdır.
         .disabled(true)
     }
 }

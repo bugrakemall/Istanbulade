@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct GalleryView: View {
+    // nil: büyük resim kapalı; GalleryPhoto: o resmin sheet'i açık. ? işareti optional demektir.
     @State private var selected: GalleryPhoto?
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: 2)
     private let cream = Color(red: 0.98, green: 0.96, blue: 0.91)
@@ -30,6 +31,7 @@ struct GalleryView: View {
         .toolbarBackground(cream, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .toolbarBackground(.hidden, for: .tabBar)
+        // Seçilen Identifiable öğe varsa SwiftUI alt pencereyi açar; nil olunca kapatır.
         .sheet(item: $selected) { photo in
             ScrollView {
                 VStack(alignment: .trailing, spacing: 12) {
@@ -51,6 +53,7 @@ struct GalleryView: View {
     }
 }
 
+// Yalnızca bu dosyada kullanılan küçük model; id, görsel koleksiyonundaki numaradır.
 private struct GalleryPhoto: Identifiable {
     let id: Int
     let title: String

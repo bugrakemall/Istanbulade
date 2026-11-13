@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Statik tanıtım ekranı; kayıt, ağ isteği veya kullanıcı hesabı içermez.
 struct AboutView: View {
     private let cream = Color(red: 0.98, green: 0.96, blue: 0.91)
 
@@ -13,6 +14,7 @@ struct AboutView: View {
                 Text("Istanbul Explorer helps you discover the history, culture and beauty of Istanbul. Explore landmarks, browse the gallery and keep your favorite places in your own collection.")
                     .font(.system(.body, design: .serif))
 
+                // Ortak feature fonksiyonu ile aynı görünümde üç bilgi kutusu çizilir.
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3)) {
                     feature("Photo gallery", icon: "camera.fill")
                     feature("Saved places", icon: "heart.fill")
@@ -43,6 +45,7 @@ struct AboutView: View {
         .toolbarBackground(.hidden, for: .tabBar)
     }
 
+    // Ekranı tekrar eden koddan kurtaran küçük yardımcı View üreticisi.
     private func feature(_ title: String, icon: String) -> some View {
         VStack(spacing: 8) {
             Image(systemName: icon).font(.title2)

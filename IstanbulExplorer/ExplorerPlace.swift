@@ -1,5 +1,7 @@
 import SwiftUI
 
+// enum sabit seçenekleri tutar. CaseIterable -> allCases; Identifiable -> ForEach kimliği;
+// Hashable -> NavigationLink(value:) için karşılaştırılabilir/özetlenebilir değer.
 enum ExplorerCategory: String, CaseIterable, Identifiable, Hashable {
     case historical = "Historical Places"
     case nature = "Nature & Views"
@@ -7,6 +9,7 @@ enum ExplorerCategory: String, CaseIterable, Identifiable, Hashable {
 
     var id: Self { self }
 
+    // Görsel numarası ExplorerArtwork içindeki koleksiyon sırasına karşılık gelir.
     var coverPhoto: Int {
         switch self {
         case .historical: return 1
@@ -31,6 +34,7 @@ enum ExplorerCategory: String, CaseIterable, Identifiable, Hashable {
     }
 }
 
+// Veri modeli: ekran çizmez, bir yerin bilgilerini taşır. Sınıf yerine basit bir struct kullanılır.
 struct ExplorerPlace: Identifiable, Hashable {
     let name: String
     let summary: String
@@ -39,6 +43,7 @@ struct ExplorerPlace: Identifiable, Hashable {
     let categories: [ExplorerCategory]
     let photo: Int
 
+    // Bu küçük örnekte benzersiz isim kimliktir. İsim değişirse eski favori eşleşmesi kaybolur.
     var id: String { name }
 
     private static let hagiaSophia = ExplorerPlace(
@@ -54,9 +59,11 @@ struct ExplorerPlace: Identifiable, Hashable {
         categories: [.historical], photo: 0
     )
 
+    // static: her ekran için yeni veri oluşturmak yerine türün üzerinden erişilir.
     static let popular = [hagiaSophia, galataTower]
 
     // Bazı yerler iki kategoriye de girer; aynı kaydı tekrar yazmıyoruz.
+    // Sunucudan veri çekilmez; altı yer uygulamanın içine sabit olarak yazılmıştır.
     static let all = [
         hagiaSophia,
         ExplorerPlace(name: "Topkapı Palace", summary: "The former home of Ottoman sultans.",

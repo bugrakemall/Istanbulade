@@ -1,13 +1,16 @@
 import SwiftUI
 
 struct PlaceDetailView: View {
+    // Ana ekran, liste veya favoriler hangi yeri gönderirse o kaydın detayını gösterir.
     let place: ExplorerPlace
+    // UserDefaults üzerindeki aynı anahtarı FavoritesView de kullanır.
     @AppStorage("favoritePlaceIDs") private var savedFavorites = ""
 
     private let cream = Color(red: 0.98, green: 0.96, blue: 0.91)
     private let navy = Color(red: 0.06, green: 0.15, blue: 0.25)
 
     // AppStorage, favorileri uygulama kapandıktan sonra da cihazda saklar.
+    // Örnek kayıt: Hagia Sophia|Galata Tower. split ile kimlik dizisine dönüştürürüz.
     private var favorites: [String] { savedFavorites.split(separator: "|").map(String.init) }
     private var isFavorite: Bool { favorites.contains(place.id) }
 
@@ -29,6 +32,7 @@ struct PlaceDetailView: View {
                 Text(place.guide).font(.system(.body, design: .serif))
                 AudioGuideView()
 
+                // Burada değer yerine doğrudan hedef View verilir; galeri tüm yerler için ortaktır.
                 NavigationLink {
                     GalleryView()
                 } label: {
@@ -67,6 +71,7 @@ struct PlaceDetailView: View {
         } else {
             updated.append(place.id)
         }
+        // Dizi tekrar tek metne çevrilir; AppStorage yeni değeri kalıcı olarak yazar.
         savedFavorites = updated.joined(separator: "|")
     }
 }

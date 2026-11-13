@@ -8,9 +8,11 @@ struct ExplorerMainView: View {
                 ExplorerHomeView()
                     .toolbar(.hidden, for: .navigationBar)
                     .toolbarBackground(.hidden, for: .tabBar)
+                    // NavigationLink bir kategori değeri gönderirse bu ekran açılır.
                     .navigationDestination(for: ExplorerCategory.self) { category in
                         CategoryPlacesView(category: category)
                     }
+                    // Yer değeri gönderildiğinde detay ekranına aynı kayıt aktarılır.
                     .navigationDestination(for: ExplorerPlace.self) { place in
                         PlaceDetailView(place: place)
                     }
@@ -30,6 +32,7 @@ struct ExplorerMainView: View {
             }
             .tabItem { Label("Categories", systemImage: "square.grid.2x2") }
 
+            // Her sekmenin ayrı NavigationStack'i vardır; geri dönüş yolları birbirine karışmaz.
             NavigationStack {
                 FavoritesView()
                     .navigationDestination(for: ExplorerPlace.self) { place in
@@ -41,6 +44,7 @@ struct ExplorerMainView: View {
             NavigationStack { AboutView() }
                 .tabItem { Label("About", systemImage: "person") }
         }
+        // tint, bağlantı ve seçili sekme rengini belirler; tabBar arka planı ekranlarda gizlenir.
         .tint(Color(red: 0.06, green: 0.15, blue: 0.25))
         .preferredColorScheme(.light)
     }

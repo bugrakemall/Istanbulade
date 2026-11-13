@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct SlideToExplore: View {
+    // () -> Void: parametre almayan, değer döndürmeyen bir işlem.
     let onExplore: () -> Void
+    // Slider konumu 0 (sol) ile 1 (sağ) arasında değişir; kalıcı kaydedilmez.
     @State private var position = 0.0
 
     var body: some View {
@@ -10,6 +12,8 @@ struct SlideToExplore: View {
                 .font(.subheadline.bold())
                 .accessibilityHidden(true)
 
+            // $position çift yönlü bağlantıdır: Slider hem değeri okur hem değiştirir.
+            // onEditingChanged, sürükleme başlarken true, biterken false verir.
             Slider(value: $position, in: 0...1, onEditingChanged: finishSlide)
                 .tint(.black.opacity(0.75))
                 .environment(\.colorScheme, .light)
@@ -26,7 +30,9 @@ struct SlideToExplore: View {
 
     private func finishSlide(_ isEditing: Bool) {
         // Parmağı bırakınca kontrol et: kısa kaydırma başa döner.
+        // Sürükleme devam ediyorsa erken çık; yalnızca bırakılınca aşağıya geç.
         guard !isEditing else { return }
+        // Yolun en az %90'ı tamamlandıysa üst ekranın verdiği işlemi çağır.
         if position >= 0.9 {
             onExplore()
         } else {

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ExplorerHomeView: View {
+    // Bu üç değer yalnızca ana ekranın görünümünü yönetir; diske yazılmaz.
     @State private var showSearch = false
     @State private var query = ""
     @State private var showAll = false
@@ -8,7 +9,9 @@ struct ExplorerHomeView: View {
     private let cream = Color(red: 0.98, green: 0.96, blue: 0.91)
     private let navy = Color(red: 0.06, green: 0.15, blue: 0.25)
 
+    // Hesaplanan özellik: sorgu veya gösterim durumu değişince güncel listeyi üretir.
     private var visiblePlaces: [ExplorerPlace] {
+        // Baş ve sondaki boşlukları temizler; arama yalnızca kayıtlı yer isimlerinde yapılır.
         let term = query.trimmingCharacters(in: .whitespacesAndNewlines)
         // Arama yoksa ana ekranda önce iki popüler yer gösterilir.
         let matches = ExplorerPlace.all.filter { place in
@@ -51,6 +54,7 @@ struct ExplorerHomeView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Button {
                         showSearch.toggle()
+                        // Aramayı kapatınca eski metin sonucu filtrelemeye devam etmesin.
                         if !showSearch { query = "" }
                     } label: {
                         Image(systemName: showSearch ? "xmark" : "magnifyingglass")
@@ -61,6 +65,7 @@ struct ExplorerHomeView: View {
                 }
             }
             if showSearch {
+                // $query, yazılan metni State'e aktarır; sonuçlar ayrıca bir arama tuşu istemez.
                 TextField("Search places", text: $query)
                     .textFieldStyle(.roundedBorder)
             }
@@ -97,6 +102,7 @@ struct ExplorerHomeView: View {
             if visiblePlaces.isEmpty {
                 Text("No matching places.").foregroundStyle(.secondary)
             }
+            // İki esnek sütun; kart, ExplorerPlace değerini NavigationStack'e gönderir.
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                 ForEach(visiblePlaces) { place in
                     NavigationLink(value: place) {

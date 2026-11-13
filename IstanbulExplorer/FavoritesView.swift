@@ -5,6 +5,7 @@ struct FavoritesView: View {
     @AppStorage("favoritePlaceIDs") private var savedFavorites = ""
     private let cream = Color(red: 0.98, green: 0.96, blue: 0.91)
 
+    // Kayıtta yalnızca isimler vardır; tam yer bilgilerini ana veri dizisinden buluruz.
     private var favorites: [ExplorerPlace] {
         let ids = savedFavorites.split(separator: "|").map(String.init)
         return ExplorerPlace.all.filter { ids.contains($0.id) }
@@ -29,11 +30,13 @@ struct FavoritesView: View {
                 }
                 .listRowBackground(cream)
             }
+            // List satırını sola kaydırıp silme işlemini SwiftUI sağlar.
             .onDelete(perform: removeFavorites)
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .background(cream.ignoresSafeArea())
+        // Kayıt yoksa boş bir liste yerine kullanıcıya ne yapacağını söyleyen görünüm gösterilir.
         .overlay {
             if favorites.isEmpty {
                 ContentUnavailableView("Your Istanbul collection", systemImage: "heart",
@@ -49,6 +52,7 @@ struct FavoritesView: View {
 
     private func removeFavorites(at offsets: IndexSet) {
         // Kaydırarak silerken yalnızca seçilen yerlerin kimliklerini çıkarırız.
+        // IndexSet, ekrandaki favori listesinin satır numaralarıdır; ana veri dizisinin değil.
         let removed = offsets.map { favorites[$0].id }
         savedFavorites = savedFavorites.split(separator: "|").map(String.init)
             .filter { !removed.contains($0) }.joined(separator: "|")

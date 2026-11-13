@@ -2,6 +2,8 @@
 
 SwiftUI ile hazırlanmış, Figma'daki sekiz ekranı içeren iOS ders projesi:
 
+Kodun dosya dosya açıklaması, temel SwiftUI kavramları, ekran akışı, test planı ve sunum soruları için [Proje öğrenme raporunu](PROJE_RAPORU.md) okuyun. Önemli işlemlerde Türkçe kod yorumları bulunur.
+
 1. Hareketli manzaralı karşılama ve sağa kaydırarak giriş.
 2. Ana ekran, yer arama ve popüler yerler.
 3. Kategoriler.

@@ -1,11 +1,14 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    // Bu ekran girişin nasıl yapılacağını değil, tamamlanınca hangi işlemin çağrılacağını bilir.
     let onExplore: () -> Void
     @State private var isPlaying = true
+    // iOS erişilebilirlik ayarını okur; hareket azaltılırsa animasyon kontrolünü gizleriz.
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
+        // ZStack: manzara en altta, karartma ortada, yazı ve kontroller en üstte.
         ZStack {
             SunsetScene(isPlaying: isPlaying).ignoresSafeArea()
             LinearGradient(
@@ -24,6 +27,7 @@ struct WelcomeView: View {
                 Spacer()
                 if !reduceMotion {
                     Button {
+                        // toggle(), true ile false arasında geçiş yapar.
                         isPlaying.toggle()
                     } label: {
                         Image(systemName: isPlaying ? "pause.fill" : "play.fill")

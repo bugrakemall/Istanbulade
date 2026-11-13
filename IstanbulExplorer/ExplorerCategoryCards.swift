@@ -1,10 +1,12 @@
 import SwiftUI
 
 struct ExplorerCategoryCards: View {
+    // Aynı genişlikte üç sütun: ana ekrandaki küçük kategori kısayolları.
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
 
     var body: some View {
         LazyVGrid(columns: columns, spacing: 8) {
+            // Enum'daki tüm kategorileri dolaşır; yeni bir kategori elle kart kopyalamayı gerektirmez.
             ForEach(ExplorerCategory.allCases) { category in
                 NavigationLink(value: category) {
                     VStack(spacing: 6) {
