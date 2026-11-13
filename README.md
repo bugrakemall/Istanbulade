@@ -1,28 +1,32 @@
 # Istanbul Explorer
 
-Bu paket Figma’daki ilk altı ekranı içerir: karşılama, ana ekran, kategoriler, yer listesi, yer detayı ve galeri. **Categories → Historical Places → Hagia Sophia** ile detay ekranına ulaşılır. Ana ekrandaki kartlar da detayı açar.
+SwiftUI ile hazırlanmış, Figma'daki sekiz ekranı içeren iOS ders projesi:
 
-Kalp, yeri cihazda favori olarak kaydeder. Favoriler sekmesinin listesi daha sonra eklenecek. **View Gallery**, iki sütunda on görsellik İstanbul galerisini açar; görsele dokununca büyür. **Play Audio Guide** düğmesi görünür ama şimdilik pasiftir; ses dosyaları pakete dahil değildir.
+1. Hareketli manzaralı karşılama ve sağa kaydırarak giriş.
+2. Ana ekran, yer arama ve popüler yerler.
+3. Kategoriler.
+4. Kategoriye göre yer listesi.
+5. Yer detayı ve favorilere ekleme.
+6. Galeri ve büyük görsel önizlemesi.
+7. Kalıcı favoriler; detaya geçiş ve kaydırarak silme.
+8. Hakkında ve üç kişilik ekip bilgisi.
 
-Rehber metinleri için kaynaklar: [UNESCO — İstanbul’un Tarihî Alanları](https://whc.unesco.org/en/list/356), [Go Türkiye — Sultanahmet Camii](https://goturkiye.com/istanbul/blue-mosque), [Kız Kulesi](https://goturkiye.com/istanbul/maidens-tower), [Ortaköy](https://goturkiye.com/istanbul/ortakoy) ve [İstanbul gezi rehberi](https://goturkiye.com/branding/press-releases/live-an-unforgettable-48-hours-in-istanbul).
+## Çalıştırma
 
-Mac’te `IstanbulExplorer.xcodeproj` dosyasını aç, iPhone simülatörü seç ve Run’a bas. Minimum iOS 17.
+Mac'te bu klasördeki `IstanbulExplorer.xcodeproj` dosyasını Xcode ile aç. IstanbulExplorer scheme'ini ve bir iPhone simülatörünü seçip Run'a bas. Minimum iOS 17. Fiziksel iPhone için Signing & Capabilities bölümünden kendi Team hesabını seç; gerekirse Bundle Identifier'ı benzersiz yap.
 
-Girişteki kaydırma için [SlideButton 1.3.0](https://github.com/no-comment/SlideButton/tree/v1.3.0) kullanılır (MIT). Paket `Vendor/SlideButton` klasöründe hazırdır ve Xcode projesine yerel bağımlılık olarak bağlıdır. ZIP’i tamamen çıkar; `Vendor` klasörü `IstanbulExplorer.xcodeproj` ile yan yana kalmalı. Paketi GitHub’dan tekrar indirmeye veya Xcode’a elle eklemeye gerek yok.
+Harici paket kurulumu gerekmez. Girişte SwiftUI Slider kullanılır. Eski projedeki SlideButton hatası devam ederse bu sürümü ayrı klasöre indirip onun xcodeproj dosyasını aç; eski pencereyi kapat.
 
-- `IstanbulExplorerApp.swift`: Karşılama ve ana ekran arasında geçiş.
-- `WelcomeView.swift`: Başlık, oynatma kontrolü ve giriş alanı.
-- `SunsetScene.swift`: Açılışta otomatik başlayan, 12 saniyelik hafif kamera hareketi. Ortadaki düğmeyle duraklatılır; Hareketi Azalt açıksa görsel sabit kalır. Video dosyası yoktur.
-- `SlideToExplore.swift`: Hazır SlideButton bileşenine sarı rengi, yazıyı ve ana ekrana geçiş işlemini verir.
-- `ExplorerHomeView.swift`: Ana ekran, arama ve popüler yerler.
-- `ExplorerCategoryCards.swift`: Ana ekrandaki üç renkli kategori kısayolu.
-- `ExplorerMainView.swift`: SwiftUI TabView ve kategori listesine geçiş. Favorites ve About şimdilik boş durum gösterir.
-- `CategoriesView.swift`: Büyük görselli üç kategori kartı.
-- `CategoryPlacesView.swift`: Seçili kategorinin görselli ve açıklamalı yer listesi.
-- `PlaceDetailView.swift`: Yer bilgisi, favori kalbi ve galeri düğmesi.
-- `AudioGuideView.swift`: Sesli rehber için pasif SwiftUI düğmesi.
-- `GalleryView.swift`: İki sütunlu İstanbul galerisi ve büyük görsel önizlemesi.
-- `ExplorerPlace.swift`: Kayıtlı örnek yerler ve kategoriler.
-- `ExplorerArtwork.swift`: Fotoğraf koleksiyonundan doğru kareyi gösterir.
+## Kod düzeni
 
-Proje bağlantıları Windows’ta kontrol edildi; Xcode derlemesi ve simülatör görünümü henüz doğrulanmadı.
+Her ekran ayrı Swift dosyasındadır. ExplorerMainView, dört sekmeyi native TabView ve NavigationStack ile yönetir. ExplorerPlace yer verilerini, ExplorerArtwork görsel koleksiyonlarını içerir. FavoritesView ve PlaceDetailView aynı AppStorage anahtarını kullanır; favoriler cihazda saklanır. Uzun olmayan kodlarda gerekli Türkçe yorumlar bulunur.
+
+## Mevcut sınırlar
+
+Açılış bir fotoğraf üzerindeki hafif kamera animasyonudur, video dosyası değildir. Önceki talebe göre Play Audio Guide görünür ama pasiftir; ses dosyası yoktur. Galeride on farklı yapay zekâ görseli bulunur; gerçek fotoğraf olarak sunulmaz. Ekip üyelerinin isimleri henüz girilmedi. Reklam, rota ve harici harita eklenmedi.
+
+Dersin 15 görsel, bir gerçek video ve bir ses dosyası şartları bu sürümde tamamen karşılanmaz. Bu medya dosyaları teslimden önce ayrıca tamamlanmalıdır.
+
+Proje dosyasındaki kaynak bağlantıları ve görsel dosyaları Windows'ta kontrol edildi. Bu ortamda Xcode/iOS simülatörü olmadığından derleme ve cihaz testi yapılmadı.
+
+Rehber metinleri için kaynaklar: [UNESCO](https://whc.unesco.org/en/list/356), [Go Türkiye — Sultanahmet Camii](https://goturkiye.com/istanbul/blue-mosque), [Kız Kulesi](https://goturkiye.com/istanbul/maidens-tower), [Ortaköy](https://goturkiye.com/istanbul/ortakoy).

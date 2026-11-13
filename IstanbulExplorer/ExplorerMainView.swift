@@ -30,12 +30,15 @@ struct ExplorerMainView: View {
             }
             .tabItem { Label("Categories", systemImage: "square.grid.2x2") }
 
-            ContentUnavailableView("Favorites", systemImage: "heart", description: Text("Coming soon."))
-                .toolbarBackground(.hidden, for: .tabBar)
-                .tabItem { Label("Favorites", systemImage: "heart") }
+            NavigationStack {
+                FavoritesView()
+                    .navigationDestination(for: ExplorerPlace.self) { place in
+                        PlaceDetailView(place: place)
+                    }
+            }
+            .tabItem { Label("Favorites", systemImage: "heart") }
 
-            ContentUnavailableView("About", systemImage: "person", description: Text("Coming soon."))
-                .toolbarBackground(.hidden, for: .tabBar)
+            NavigationStack { AboutView() }
                 .tabItem { Label("About", systemImage: "person") }
         }
         .tint(Color(red: 0.06, green: 0.15, blue: 0.25))
