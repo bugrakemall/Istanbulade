@@ -21,6 +21,17 @@ Harici paket kurulumu gerekmez. Girişte SwiftUI Slider kullanılır. Eski proje
 
 ## Kod düzeni
 
+Swift dosyaları fiziksel klasörlere ve aynı isimli Xcode gruplarına ayrılmıştır:
+
+```text
+IstanbulExplorer/
+├── App/          # Uygulama başlangıcı ve ana sekmeler (2 dosya)
+├── Models/       # Yer ve kategori verileri (1 dosya)
+├── Views/        # Tam ekran sayfalar (8 dosya)
+├── Components/   # Ekranlarda kullanılan görsel ve kontrol parçaları (5 dosya)
+└── Assets.xcassets/
+```
+
 Her ekran ayrı Swift dosyasındadır. ExplorerMainView, dört sekmeyi native TabView ve NavigationStack ile yönetir. ExplorerPlace yer verilerini, ExplorerArtwork görsel koleksiyonlarını içerir. FavoritesView ve PlaceDetailView aynı AppStorage anahtarını kullanır; favoriler cihazda saklanır. Uzun olmayan kodlarda gerekli Türkçe yorumlar bulunur.
 
 ## Mevcut sınırlar

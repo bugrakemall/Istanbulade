@@ -52,7 +52,10 @@ IstanbulExplorer/
 │   ├── project.pbxproj
 │   └── xcshareddata/xcschemes/IstanbulExplorer.xcscheme
 ├── IstanbulExplorer/
-│   ├── 16 adet .swift dosyası
+│   ├── App/          (başlangıç ve sekmeler: 2 Swift dosyası)
+│   ├── Models/       (yer ve kategori modeli: 1 Swift dosyası)
+│   ├── Views/        (ekranlar: 8 Swift dosyası)
+│   ├── Components/   (ortak bileşenler: 5 Swift dosyası)
 │   └── Assets.xcassets/
 ├── README.md
 ├── PROJE_RAPORU.md
