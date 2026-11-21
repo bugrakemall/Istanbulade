@@ -6,7 +6,7 @@ Bu rapor, 13 Kasım 2026 tarihinde depoda bulunan kodu açıklar. Amaç, projeyi
 
 Istanbul Explorer, İstanbul'daki bazı turistik yerleri tanıtan bir iOS uygulamasıdır. Kullanıcı hareketli bir karşılama ekranından girer, yerleri kategoriye göre gezer, açıklamalarını okur, görsellere bakar ve sevdiği yerleri favorilere ekler.
 
-Bu sürümde rota hesaplama, harita, mesafe bulma, konum izni, üyelik, reklam, sunucu veya internetten veri indirme yoktur. Yer bilgileri ve görseller uygulamanın içindedir. Favoriler aynı cihazda saklanır; hesaplar veya cihazlar arasında eşitlenmez.
+Yer bilgileri ve görseller uygulamanın içindedir. Home’daki hava durumu kartı Open-Meteo API’sine, haber kartı TRT Haber’in açık RSS akışına bağlanır. Favoriler aynı cihazda saklanır ve cihazlar arasında eşitlenmez. Uygulamada rota hesaplama, harita, mesafe bulma, konum izni, üyelik veya reklam özelliği bulunmaz.
 
 Uygulama sekiz ana ekran türünü içerir. Birden fazla yerin aynı detay şablonunda açılması, her yer için ayrı Swift dosyası yazıldığı anlamına gelmez.
 
@@ -53,9 +53,9 @@ IstanbulExplorer/
 │   └── xcshareddata/xcschemes/IstanbulExplorer.xcscheme
 ├── IstanbulExplorer/
 │   ├── App/          (başlangıç ve sekmeler: 2 Swift dosyası)
-│   ├── Models/       (yer ve kategori modeli: 1 Swift dosyası)
+│   ├── Models/       (yer, kategori, hava durumu ve haber: 3 Swift dosyası)
 │   ├── Views/        (ekranlar: 8 Swift dosyası)
-│   ├── Components/   (ortak bileşenler: 5 Swift dosyası)
+│   ├── Components/   (ortak bileşenler: 7 Swift dosyası)
 │   └── Assets.xcassets/
 ├── README.md
 ├── PROJE_RAPORU.md
@@ -63,7 +63,7 @@ IstanbulExplorer/
 └── Görsel üretim komutlarını içeren .txt dosyaları
 ```
 
-`project.pbxproj`, Xcode'un hangi kaynakları derleyeceğini, hangi kaynak dosyalarını paketleyeceğini ve hedef ayarlarını tutar. Dosyayı normalde elle düzenlemek yerine Xcode kullanılır. Bir Swift dosyasının klasörde bulunması tek başına yeterli değildir; uygulama target'ına da bağlı olması gerekir. Bu projede 16 Swift dosyası Sources aşamasına, asset kataloğu Resources aşamasına bağlıdır.
+`project.pbxproj`, Xcode'un hangi kaynakları derleyeceğini, hangi kaynak dosyalarını paketleyeceğini ve hedef ayarlarını tutar. Dosyayı normalde elle düzenlemek yerine Xcode kullanılır. Bir Swift dosyasının klasörde bulunması tek başına yeterli değildir; uygulama target'ına da bağlı olması gerekir. Bu projede 20 Swift dosyası Sources aşamasına, asset kataloğu Resources aşamasına bağlıdır.
 
 Paylaşılan `IstanbulExplorer.xcscheme`, projeyi başka bir bilgisayarda açan kişinin çalıştırılacak target'ı görebilmesini sağlar. Scheme uygulama kaynak kodu değildir; çalıştırma/derleme düzenidir.
 
@@ -208,6 +208,10 @@ Değerle gezinme için modeller Hashable'dır. Tüm uygulama adına tutulan ayr�
 `visiblePlaces` hesaplanan özelliği, sorgunun başındaki ve sonundaki boşlukları temizler; isimlerde `localizedStandardContains` ile eşleşme arar. Boş aramada başlangıçta iki popüler yer görünür. See all seçildiyse veya arama metni varsa eşleşen ana liste kullanılır. Sonuç yoksa açıklama yazısı gösterilir. İnternette veya konumlarda arama yapılmaz.
 
 Arama düğmesi alanı açıp kapatır; kapatınca metin temizlenir. TextField `$query` ile bağlıdır, ayrı bir arama tuşu gerektirmez. See all / Show less yalnızca `showAll` değerini değiştirir. İçerik, `header`, `hero` ve `popularPlaces` adlı küçük görünüm parçalarına ayrılarak body kısaltılmıştır.
+
+Popular Places altındaki `WeatherCard`, açıldığında `.task` ile `IstanbulWeather.fetch()` fonksiyonunu çağırır. `URLSession` İstanbul koordinatlarıyla Open-Meteo’ya istek gönderir. `JSONDecoder`, yanıtın `current` bölümündeki iki sıcaklığı Swift değerlerine çevirir. Kart yüklenirken bekleme göstergesi, hata oluşursa Try again düğmesi gösterir.
+
+Yanındaki `NewsCard`, `IstanbulHeadline.fetch()` ile TRT Haber’in Türkiye RSS akışını ister. `XMLParser`, her haberin başlığını ve bağlantısını okur. Başlığında İstanbul geçen ilk haber bulunursa kart kaynak adını ve tıklanabilir başlığı gösterir. Haber bulunamadığında boş durum, bağlantı hatasında tekrar deneme düğmesi görünür.
 
 Hero görselinde koyu bir LinearGradient üstüne yazı konur. Kartlarda iki esnek sütunlu LazyVGrid kullanılır. Kartlar doğrudan ilgili ExplorerPlace değerini gönderir. `maxWidth: 500` geniş ekranlarda içeriğin aşırı yayılmasını sınırlar; sonraki sonsuz genişlikli frame içeriği alan içinde ortalar.
 
@@ -388,7 +392,7 @@ Arşiv adı için gerçek öğrenci numarasını siz girmelisiniz. Geliştirme r
 
 **MVC / MVVM mi?** Bu küçük uygulamada veri modeli ile View dosyaları ayrılmış, kısa durum ve işlemler View içinde tutulmuştur. Ayrı bir ViewModel veya servis katmanı olmadığı için tam MVVM diye tanıtılmamalıdır.
 
-**İnternetsiz kullanılabilir mi?** Mevcut içerik yerel olduğundan bu akış için ağ isteği gerekmez. Ancak bu durum canlı turizm bilgisi, güncel açılış saati veya fiyat sağlandığı anlamına gelmez.
+**İnternetsiz kullanılabilir mi?** Yerleri gezme, galeri ve favoriler çevrimdışı çalışır. Hava durumu kartı API’ye bağlanamazsa tekrar deneme düğmesi gösterir.
 
 **Tamamlanmamış ne var?** Gerçek video, ses, 15 görsel şartı, ekip isimleri, cihaz testleri ve mağaza hazırlıkları. Hangi özelliklerin çalıştığı açıkça ayrılmalıdır.
 

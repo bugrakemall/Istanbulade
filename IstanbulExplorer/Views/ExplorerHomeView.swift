@@ -33,6 +33,12 @@ struct ExplorerHomeView: View {
                 }
 
                 popularPlaces
+
+                // Hava durumu solda, haber kartı sağda görünür.
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                    WeatherCard()
+                    NewsCard()
+                }
             }
             .padding(14)
             .frame(maxWidth: 500)

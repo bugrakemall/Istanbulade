@@ -26,15 +26,19 @@ Swift dosyaları fiziksel klasörlere ve aynı isimli Xcode gruplarına ayrılm�
 ```text
 IstanbulExplorer/
 ├── App/          # Uygulama başlangıcı ve ana sekmeler (2 dosya)
-├── Models/       # Yer ve kategori verileri (1 dosya)
+├── Models/       # Yer, kategori, hava durumu ve haber verileri (3 dosya)
 ├── Views/        # Tam ekran sayfalar (8 dosya)
-├── Components/   # Ekranlarda kullanılan görsel ve kontrol parçaları (5 dosya)
+├── Components/   # Ekranlarda kullanılan görsel ve kontrol parçaları (7 dosya)
 └── Assets.xcassets/
 ```
 
 Her ekran ayrı Swift dosyasındadır. ExplorerMainView, dört sekmeyi native TabView ve NavigationStack ile yönetir. ExplorerPlace yer verilerini, ExplorerArtwork görsel koleksiyonlarını içerir. FavoritesView ve PlaceDetailView aynı AppStorage anahtarını kullanır; favoriler cihazda saklanır. Uzun olmayan kodlarda gerekli Türkçe yorumlar bulunur.
 
 ## Mevcut sınırlar
+
+Home ekranında Popular Places altında İstanbul hava durumu kartı var. `IstanbulWeather.swift`, İstanbul merkezinin sabit koordinatlarıyla [Open-Meteo](https://open-meteo.com/en/docs) API’sinden sıcaklığı ve hissedilen sıcaklığı alır. `WeatherCard.swift` bu değerleri, yüklenme ve tekrar deneme durumlarını gösterir. Kart internet bağlantısı ister. Ücretsiz erişim [ticari olmayan kullanım](https://open-meteo.com/en/terms) içindir.
+
+Yanındaki Istanbul News kartı [TRT Haber Türkiye RSS akışını](https://www.trthaber.com/turkiye_articles.rss) okur. Başlığında İstanbul geçen ilk haberi ve kaynak adını gösterir. Başlık haberin özgün sayfasına bağlanır. Hesap veya API anahtarı gerekmez.
 
 Açılış bir fotoğraf üzerindeki hafif kamera animasyonudur, video dosyası değildir. Önceki talebe göre Play Audio Guide görünür ama pasiftir; ses dosyası yoktur. Galeride on farklı yapay zekâ görseli bulunur; gerçek fotoğraf olarak sunulmaz. Ekip üyelerinin isimleri henüz girilmedi. Reklam, rota ve harici harita eklenmedi.
 
