@@ -1,3 +1,4 @@
+import SafariServices
 import SwiftUI
 
 struct NewsCard: View {
@@ -5,6 +6,7 @@ struct NewsCard: View {
     @State private var loaded = false
     @State private var failed = false
     @State private var requestID = 0
+    @State private var showArticle = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -12,7 +14,9 @@ struct NewsCard: View {
                 .font(.subheadline.bold())
 
             if let headline {
-                Link(destination: headline.url) {
+                Button {
+                    showArticle = true
+                } label: {
                     Text(headline.title).font(.caption.bold()).lineLimit(3)
                 }
                 Text("Source: TRT Haber").font(.caption2)
@@ -28,6 +32,11 @@ struct NewsCard: View {
         .padding(12)
         .frame(maxWidth: .infinity, minHeight: 112, alignment: .topLeading)
         .background(Color(red: 0.96, green: 0.90, blue: 0.80), in: RoundedRectangle(cornerRadius: 10))
+        .sheet(isPresented: $showArticle) {
+            if let headline {
+                ArticleBrowser(url: headline.url)
+            }
+        }
         .task(id: requestID) {
             failed = false
             loaded = false
@@ -42,4 +51,15 @@ struct NewsCard: View {
             }
         }
     }
+}
+
+// SafariServices, haber sayfasını uygulamanın içinde açan iOS bileşenidir.
+private struct ArticleBrowser: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeUIViewController(context: Context) -> SFSafariViewController {
+        SFSafariViewController(url: url)
+    }
+
+    func updateUIViewController(_ controller: SFSafariViewController, context: Context) {}
 }

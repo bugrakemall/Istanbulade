@@ -4,6 +4,7 @@ struct WeatherCard: View {
     @State private var weather: IstanbulWeather?
     @State private var failed = false
     @State private var requestID = 0
+    @State private var showDetails = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -16,12 +17,9 @@ struct WeatherCard: View {
                 Text("Feels like \(weather.feelsLike, specifier: "%.1f") °C")
                     .font(.caption)
 
-                // Kaynak yazısı yalnızca API yanıtı başarıyla okununca görünür.
-                if let source = URL(string: "https://open-meteo.com/") {
-                    Link("Data retrieved from Open-Meteo", destination: source)
-                        .font(.caption2)
-                        .underline()
-                }
+                Button("View weather") { showDetails = true }
+                    .font(.caption.bold())
+                Text("Data retrieved from Open-Meteo").font(.caption2)
             } else if failed {
                 Text("Weather unavailable.").font(.caption)
                 Button("Try again") { requestID += 1 }
@@ -34,6 +32,34 @@ struct WeatherCard: View {
         .padding(12)
         .frame(maxWidth: .infinity, minHeight: 112, alignment: .topLeading)
         .background(Color(red: 0.85, green: 0.92, blue: 0.96), in: RoundedRectangle(cornerRadius: 10))
+        // Karttaki değerleri uygulama içindeki detay ekranına taşıyoruz.
+        .sheet(isPresented: $showDetails) {
+            if let weather {
+                NavigationStack {
+                    Form {
+                        Section("Current conditions") {
+                            LabeledContent("Temperature") {
+                                Text("\(weather.temperature, specifier: "%.1f") °C")
+                            }
+                            LabeledContent("Feels like") {
+                                Text("\(weather.feelsLike, specifier: "%.1f") °C")
+                            }
+                        }
+                        Section {
+                            Text("Data retrieved from Open-Meteo")
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                    .navigationTitle("Istanbul Weather")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") { showDetails = false }
+                        }
+                    }
+                }
+            }
+        }
         // Kart açılınca ve Try again isteği yenileyince API çağrılır.
         .task(id: requestID) {
             weather = nil
