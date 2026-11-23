@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CategoriesView: View {
+    let onSelect: (ExplorerCategory) -> Void
 
     var body: some View {
         ScrollView {
@@ -12,31 +13,29 @@ struct CategoriesView: View {
 
                 // Ana ekrandaki küçük kartlarla aynı kategori verisini, büyük kartlarla gösterir.
                 ForEach(ExplorerCategory.allCases) { category in
-                    NavigationLink {
-                        CategoryPlacesView(category: category)
+                    Button {
+                        onSelect(category)
                     } label: {
-                        ExplorerArtwork(photo: category.coverPhoto)
-                            .allowsHitTesting(false)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 166)
-                            // Yazıyı resmin üstüne koyarız; alttaki koyu geçiş okunurluğu artırır.
-                            .overlay(alignment: .bottom) {
-                                HStack {
-                                    Text(category.rawValue)
-                                        .font(.system(.title3, design: .serif).bold())
-                                    Spacer()
-                                    Image(systemName: "chevron.right").font(.subheadline)
-                                }
-                                .foregroundStyle(.white)
-                                .padding(14)
-                                .background {
+                        HStack {
+                            Text(category.rawValue)
+                                .font(.system(.title3, design: .serif).bold())
+                            Spacer()
+                            Image(systemName: "chevron.right").font(.subheadline)
+                        }
+                        .foregroundStyle(.white)
+                        .padding(14)
+                        .frame(maxWidth: .infinity, minHeight: 166, alignment: .bottomLeading)
+                        .background {
+                            // Görsel arka planda kalır ve dokunmayı düğme alır.
+                            ExplorerArtwork(photo: category.coverPhoto)
+                                .overlay {
                                     LinearGradient(colors: [.clear, .black.opacity(0.75)],
-                                                   startPoint: .top, endPoint: .bottom)
+                                                   startPoint: .center, endPoint: .bottom)
                                 }
-                            }
-                            .clipShape(RoundedRectangle(cornerRadius: 14))
-                            // Görselin tamamına dokunarak kategori listesini açabilirsin.
-                            .contentShape(Rectangle())
+                                .allowsHitTesting(false)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel(category.rawValue)

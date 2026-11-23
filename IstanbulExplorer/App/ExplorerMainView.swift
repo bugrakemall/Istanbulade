@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct ExplorerMainView: View {
+    // Categories kendi gezinme yolunu tutar; seçilen kart bu yola eklenir.
+    @State private var categoriesPath = NavigationPath()
+
     var body: some View {
         // Sekmeleri TabView, her sekmenin geri dönüşünü kendi NavigationStack'i yönetir.
         TabView {
@@ -19,10 +22,15 @@ struct ExplorerMainView: View {
             }
             .tabItem { Label("Home", systemImage: "house") }
 
-            NavigationStack {
-                CategoriesView()
+            NavigationStack(path: $categoriesPath) {
+                CategoriesView { category in
+                    categoriesPath.append(category)
+                }
                     .toolbar(.hidden, for: .navigationBar)
                     .toolbarBackground(.hidden, for: .tabBar)
+                    .navigationDestination(for: ExplorerCategory.self) { category in
+                        CategoryPlacesView(category: category)
+                    }
                     .navigationDestination(for: ExplorerPlace.self) { place in
                         PlaceDetailView(place: place)
                     }
