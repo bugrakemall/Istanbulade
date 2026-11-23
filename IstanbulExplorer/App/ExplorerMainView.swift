@@ -23,9 +23,6 @@ struct ExplorerMainView: View {
                 CategoriesView()
                     .toolbar(.hidden, for: .navigationBar)
                     .toolbarBackground(.hidden, for: .tabBar)
-                    .navigationDestination(for: ExplorerCategory.self) { category in
-                        CategoryPlacesView(category: category)
-                    }
                     .navigationDestination(for: ExplorerPlace.self) { place in
                         PlaceDetailView(place: place)
                     }

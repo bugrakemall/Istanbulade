@@ -12,9 +12,12 @@ struct CategoriesView: View {
 
                 // Ana ekrandaki küçük kartlarla aynı kategori verisini, büyük kartlarla gösterir.
                 ForEach(ExplorerCategory.allCases) { category in
-                    // Hedef ekran ExplorerMainView içindeki navigationDestination ile belirlenir.
-                    NavigationLink(value: category) {
+                    NavigationLink {
+                        CategoryPlacesView(category: category)
+                    } label: {
                         ExplorerArtwork(photo: category.coverPhoto)
+                            .allowsHitTesting(false)
+                            .frame(maxWidth: .infinity)
                             .frame(height: 166)
                             // Yazıyı resmin üstüne koyarız; alttaki koyu geçiş okunurluğu artırır.
                             .overlay(alignment: .bottom) {
@@ -32,6 +35,8 @@ struct CategoriesView: View {
                                 }
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 14))
+                            // Görselin tamamına dokunarak kategori listesini açabilirsin.
+                            .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel(category.rawValue)

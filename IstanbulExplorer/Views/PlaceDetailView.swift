@@ -37,10 +37,13 @@ struct PlaceDetailView: View {
                     GalleryView()
                 } label: {
                     Label("View Gallery", systemImage: "arrow.right")
-                        .frame(maxWidth: .infinity, minHeight: 30)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(navy)
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                        .background(Color(red: 0.85, green: 0.92, blue: 0.96),
+                                    in: RoundedRectangle(cornerRadius: 12))
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(navy)
+                .buttonStyle(.plain)
             }
             .padding(16)
             .frame(maxWidth: 500)
