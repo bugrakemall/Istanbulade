@@ -40,8 +40,7 @@ struct PlaceDetailView: View {
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(navy)
                         .frame(maxWidth: .infinity, minHeight: 44)
-                        .background(Color(red: 0.85, green: 0.92, blue: 0.96),
-                                    in: RoundedRectangle(cornerRadius: 12))
+                        .background(.white, in: RoundedRectangle(cornerRadius: 12))
                 }
                 .buttonStyle(.plain)
             }
