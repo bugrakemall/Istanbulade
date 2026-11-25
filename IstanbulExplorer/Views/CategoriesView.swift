@@ -39,6 +39,7 @@ struct CategoriesView: View {
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel(category.rawValue)
+                    .accessibilityIdentifier("category.\(category.rawValue)")
                 }
             }
             .padding(16)

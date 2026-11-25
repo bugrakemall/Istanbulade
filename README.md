@@ -19,6 +19,17 @@ Mac'te bu klasördeki `IstanbulExplorer.xcodeproj` dosyasını Xcode ile aç. Is
 
 Harici paket kurulumu gerekmez. Girişte SwiftUI Slider kullanılır. Eski projedeki SlideButton hatası devam ederse bu sürümü ayrı klasöre indirip onun xcodeproj dosyasını aç; eski pencereyi kapat.
 
+## Testleri çalıştırma
+
+Mac’te `IstanbulExplorer.xcodeproj` dosyasını aç, `IstanbulExplorer` scheme’ini ve bir iPhone simülatörünü seç. **Product → Test (⌘U)** iki test hedefini birlikte çalıştırır. Sol taraftaki **Test Navigator** üzerinden tek bir testin yanındaki çalıştır düğmesini de kullanabilirsin.
+
+| Dosya | Kontrol edilen davranış |
+|---|---|
+| `Tests/IstanbulExplorerTests.swift` | Topkapı’nın iki kategoride yer alması, sıcaklıkların doğru okunması, eksik sıcaklık alanının hata üretmesi ve RSS’ten ilk İstanbul haberinin seçilmesi |
+| `Tests/IstanbulExplorerUITests.swift` | Giriş kaydırıcısından sonra Categories → Historical Places akışının tarihi yerler listesini açması |
+
+Birim testleri örnek veriyle çalışır. UI testi uygulamayı simülatörde açar. Test sonuçlarını Xcode’da doğrulayın.
+
 ## Kod düzeni
 
 Swift dosyaları fiziksel klasörlere ve aynı isimli Xcode gruplarına ayrılmıştır:

@@ -341,7 +341,7 @@ Aşağıdaki tablo **beklenen davranış ve test planıdır; başarılı cihaz t
 | Sekme değiştirip geri dön | Gezinme yolları karışmaz |
 | Küçük ekran / büyük yazı / VoiceOver | Taşma ve etiketsiz kontrol olup olmadığı incelenir |
 
-Depoda ayrıca bir XCTest target'ı yoktur. Tabloyu tamamlamadan rapora “tüm testler geçti” yazılmamalıdır.
+`Tests` klasöründe dört birim testi ve bir UI testi bulunur. İkisi de ana Xcode scheme’ine bağlıdır ve simülatör seçildikten sonra ⌘U ile çalıştırılır. Sonuçlar Xcode Test Navigator’da görülür. Yukarıdaki tablo ayrıca elle yapılabilecek kontrolleri listeler.
 
 ## 22. Küçük değişiklikleri nerede yapacağız?
 

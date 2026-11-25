@@ -18,6 +18,7 @@ struct SlideToExplore: View {
                 .tint(.black.opacity(0.75))
                 .environment(\.colorScheme, .light)
                 .accessibilityLabel("Explore Istanbul")
+                .accessibilityIdentifier("welcome.slider")
                 .accessibilityHint("Slide right to enter")
                 .accessibilityAction { onExplore() }
         }

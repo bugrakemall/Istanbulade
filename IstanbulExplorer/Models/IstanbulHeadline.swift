@@ -14,7 +14,11 @@ struct IstanbulHeadline {
             throw URLError(.badServerResponse)
         }
 
-        // RSS, XML biçiminde gelir. Parser her haberin başlığını ve bağlantısını okur.
+        return try parseRSS(data)
+    }
+
+    // Ayrı metot sayesinde aynı RSS okuyucusunu internet olmadan test edebiliriz.
+    static func parseRSS(_ data: Data) throws -> IstanbulHeadline? {
         let reader = HeadlineReader()
         let parser = XMLParser(data: data)
         parser.delegate = reader
